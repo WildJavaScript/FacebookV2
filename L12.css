@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*top-bar*/
+
+/*logo-search-child*/
+
+.top-bar {
+  width: 100vw;
+  height: 5.2vh;
+  background-color: #17407b;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-search-child {
+  display: flex;
+  align-items: center;
+}
+.top-bar-logo {
+  height: 4.6vh;
+  border-radius: 50%;
+  margin-top: 0.3vh;
+  cursor: pointer;
+}
+.search-wrapper {
+  margin-left: 10px;
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+}
+.search-bar {
+  border-radius: 25px;
+  text-indent: 15px;
+  height: 2.9vh;
+  border: 0;
+}
+.search-bar:focus {
+  outline: none;
+}
+.search-fav-wrapper {
+  align-self: center;
+}
+.search-fav {
+  height: 1.8vh;
+  margin-right: 0.5vw;
+  margin-left: 0.1vw;
+  margin-top: 0.1vh;
+  cursor: pointer;
+}
+
+/*notification-settings-child*/
+
+.notification-setting-child {
+  display: flex;
+}
+.notification-profile-pic {
+  height: 4.6vh;
+  border-radius: 50%;
+  margin-top: 0.3vh;
+}
+.notification-panel-pic {
+  height: 2.8vh;
+  margin-top: 1.2vh;
+  margin-left: 0.3vw;
+}
+
+/*maint-wrapper*/
+
+.main-wrapper {
+    display: flex;
+}
+/*right-side-bar*/
+
+.right-side-bar {
+  -webkit-box-shadow: 0px 20px 56px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 20px 56px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 56px 0px rgba(0, 0, 0, 0.2);
+  padding: 1%;
+}
+.ad-img {
+  width: 300px;
+}
+.ad-texts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-evenly;
+}
+.ad-texts-wrapper p {
+    margin: 10px;
+    cursor: pointer;
+}
