@@ -62,11 +62,13 @@ body {
   height: 4.6vh;
   border-radius: 50%;
   margin-top: 0.3vh;
+  cursor: pointer;
 }
 .notification-panel-pic {
   height: 2.8vh;
   margin-top: 1.2vh;
   margin-left: 0.3vw;
+  cursor: pointer;
 }
 
 /*maint-wrapper*/
