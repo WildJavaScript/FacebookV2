@@ -74,8 +74,52 @@ body {
 /*maint-wrapper*/
 
 .main-wrapper {
-    display: flex;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+/*left-side-menu*/
+
+.left-side-menu {
+  -webkit-box-shadow: 0px 20px 56px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 20px 56px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 56px 0px rgba(0, 0, 0, 0.2);
+  padding: 1%;
+}
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.left-side-profile-pic {
+  height: 6.5vh;
+  border-radius: 50%;
+}
+.left-side-text-wrapper {
+  margin-left: 0.5vw;
+}
+.left-side-text-wrapper h3 {
+  margin: 0.2vh 0;
+}
+.left-side-text-wrapper p {
+  font-size: x-small;
+  margin: 0.2vh 0;
+}
+.separator-pic {
+  width: 12vw;
+  height: 1vh;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-pic {
+  height: 4vh;
+}
+.menu-text {
+  margin-left: 1vh;
+}
+
 /*right-side-bar*/
 
 .right-side-bar {
@@ -88,12 +132,13 @@ body {
   width: 300px;
 }
 .ad-texts-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  justify-content: space-evenly;
 }
 .ad-texts-wrapper p {
-    margin: 10px;
-    cursor: pointer;
+  margin: 10px;
+  cursor: pointer;
+  color: #b3b3b3;
 }
