@@ -185,6 +185,32 @@ img {
 .post-details {
   margin-bottom: 10px;
 }
+.like-comment-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.like-comment-wrapper p {
+  margin-left: 10px;
+}
+.like-comment-separator {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.like-wrapper {
+  display: flex;
+  cursor: pointer;
+}
+.like-img {
+  height: 50px;
+}
+.comment-wrapper {
+  display: flex;
+  cursor: pointer;
+}
+.comment-img {
+  height: 50px;
+}
 
 /*right-side-bar*/
 
