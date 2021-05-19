@@ -14,10 +14,10 @@
   </head>
   <body>
     <h1 class="d-flex justify-content-center">Register Form</h1>
-    <form action="../LoginForm/Login.html" class="row g-3 p-5 m-5">
+    <form id="regForm" class="row g-3 p-5 m-5">
       <div class="d-flex flex-column justify-content-center">
         <div class="col-md-3 mx-auto">
-          <label class="form-label">Firs Name</label>
+          <label class="form-label">First Name</label>
           <input
             type="text"
             class="form-control"
@@ -48,7 +48,25 @@
           <label id="lastNameValidFeedback" class="valid-feedback">
             Looks good!
           </label>
-          <label id="lastNameInvalidFeedback" class="invalid-feedback"> </label>
+          <label id="lastNameInvalidFeedback" class="invalid-feedback">
+            Last Name needs to be tetween 2 and 15 characters!
+          </label>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <label class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="usernameInput"
+            required
+            placeholder="Username"
+            value=""
+            onkeyup="formInputChange(this)"
+          />
+          <label id="usernameValidFeedback" class="valid-feedback">
+            Looks good!
+          </label>
+          <label id="usernameInvalidFeedback" class="invalid-feedback"> </label>
         </div>
         <div class="col-md-3 mx-auto">
           <label class="form-label">Email</label>
@@ -112,8 +130,7 @@
           id="registerButton"
           class="btn btn-success"
           onclick="saveData()"
-          onclick="redirect()"
-          type="submit"
+          type="button"
         >
           Register
         </button>
