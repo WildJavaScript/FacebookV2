@@ -15,6 +15,11 @@ if (loggedUsername !== null) {
       console.log(userData);
       document.querySelector(".user-name").innerHTML =
         userData.firstName + " " + userData.lastName;
+      window.localStorage.setItem("userId", userData.id);
+      window.localStorage.setItem(
+        "author",
+        userData.lastName + " " + userData.firstName
+      );
     });
 } else {
   console.log("Username unaviable!");
