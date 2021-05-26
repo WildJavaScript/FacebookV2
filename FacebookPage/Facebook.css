@@ -207,9 +207,10 @@ img {
 .comment-wrapper {
   display: flex;
   cursor: pointer;
+  align-items: center;
 }
 .comment-img {
-  height: 50px;
+  height: 40px;
 }
 
 /*right-side-bar*/
