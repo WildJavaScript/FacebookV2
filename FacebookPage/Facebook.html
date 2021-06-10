@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook 2.0</title>
     <link rel="stylesheet" href="./Facebook.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="top-bar">
       <div class="logo-search-child">
         <div class="logo-wrapper">
-          <img src="./img/logo.png" class="top-bar-logo" />
+          <img onclick="refresh()" src="./img/logo.png" class="top-bar-logo" />
         </div>
         <div class="search-wrapper">
           <input
@@ -56,6 +62,13 @@
             <p class="user-title">Front-end developer</p>
           </div>
         </div>
+        <button
+          class="btn btn-primary my-3"
+          type="button"
+          onclick="postSomething()"
+        >
+          Make a new post
+        </button>
         <div class="menu-separator-wrapper">
           <img src="./img/separator-line.png" class="menu-separator" />
         </div>
@@ -102,6 +115,11 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
     <script src="./Facebook.js"></script>
     <script src="./FacebookLoadData.js"></script>
     <script src="./PostComponent.js"></script>
